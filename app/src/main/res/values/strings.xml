@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GithHub Sample</string>
+    <string name="user">User</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="animation_name">button_fab_animation</string>
+    <string name="github_user_name">Github User Name</string>
+    <string name="username_empty_error">Username cannot be empty</string>
+    <string name="nothing_to_show">No repositories found for this username</string>
+    <string name="service_error">Unable to load data</string>
+    <string name="owner">Owner</string>
+    <string name="invalid_user">User not found</string>
+    <string name="view">View</string>
+</resources>

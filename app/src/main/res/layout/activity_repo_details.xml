@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <include layout="@layout/repository_item_layout"/>
+
+    <View
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:background="@color/line_color"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp">
+
+        <com.boxme.githubsample.githhubsample.CustomComponents.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/owner"
+                custom:font="OpenSans-Regular.ttf"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/owner_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"/>
+
+        <com.boxme.githubsample.githhubsample.CustomComponents.CustomTextView
+                android:id="@+id/txt_owner_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                custom:font="OpenSans-Regular.ttf"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:background="@color/line_color"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_visibility_black_24dp"
+                android:alpha="0.3"/>
+
+        <com.boxme.githubsample.githhubsample.CustomComponents.CustomTextView
+                android:id="@+id/txt_watchers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                custom:font="OpenSans-Regular.ttf"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/ic_star_black_24dp"
+                android:alpha="0.3"/>
+
+        <com.boxme.githubsample.githhubsample.CustomComponents.CustomTextView
+                android:id="@+id/txt_stargazers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                custom:font="OpenSans-Regular.ttf"/>
+
+    </LinearLayout>
+
+</LinearLayout>
